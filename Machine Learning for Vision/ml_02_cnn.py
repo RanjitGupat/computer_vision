@@ -35,3 +35,23 @@ models.fit(train_image, train_labels, epochs=10, validation_data=(test_image, te
 # Evaluate the model
 test_loss, test_acc = models.evaluate(test_image, test_labels, verbose=2)
 print(f'Test accuracy: {test_acc}')
+
+
+
+"""How CNNs work 
+CNNs are made up of layers that process input data.
+Convolutional layers: Apply filters to extract features from the input.
+Pooling layers: Reduce the spatial dimensions of the features.
+Fully connected layers: Connect the extracted features to the final output.
+Training: CNNs are trained with labeled data, adjusting weights to optimize performance.
+Applications of CNNs 
+Image classification: CNNs are used to classify images.
+Object detection: CNNs are used to detect objects in images and videos.
+Image segmentation: CNNs are used to segment images.
+Natural language processing: CNNs are used to process natural language.
+Drug discovery: CNNs are used in drug discovery.
+Health risk assessments: CNNs are used to assess health risks.
+Depth estimation: CNNs are used to estimate depth for self-driving cars.
+Challenges with CNNs
+CNNs require millions of labeled data points for training. 
+CNNs can be computationally demanding, requiring graphical processing units (GPUs) to train models. """
